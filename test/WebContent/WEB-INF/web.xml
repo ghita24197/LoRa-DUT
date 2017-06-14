@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>test</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>IndexController</servlet-name>
+    <servlet-class>controller.IndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexController</servlet-name>
+    <url-pattern>/trang-chu</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GetDataController</servlet-name>
+    <servlet-class>controller.GetDataController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetDataController</servlet-name>
+    <url-pattern>/data</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GetFadeController</servlet-name>
+    <servlet-class>controller.GetFadeController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetFadeController</servlet-name>
+    <url-pattern>/fade</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GetLedController</servlet-name>
+    <servlet-class>controller.GetLedController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetLedController</servlet-name>
+    <url-pattern>/led</url-pattern>
+  </servlet-mapping>
+</web-app>
